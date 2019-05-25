@@ -1,0 +1,12 @@
+<!-- Here I would want to have buttons/radio buttons with existing category names to click when creating a new link
+entry that would pass that category_id with the other params to create new instance.
+Would also want to have a button that says 'click here to add new category if your desired one is not available
+and that would link_to categories#new' -->
+
+<%= link_to image_tag("star.svg", width: 50), root_path %>
+
+<h1>Add New Resource</h1>
+
+<%= render 'form' %>
+
+<p>Don't see the category you're looking for? Click <%= link_to "here", new_category_path %> to add it to the list </p>

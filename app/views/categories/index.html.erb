@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="header">
+    <div class="header_item" style="margin-left: 2%">
+      <%= link_to "Add a Category", new_category_path %>
+    </div>
+    <div class="header_item">
+      <h1>Eve Resources Tool</h1>
+    </div>
+    <div class="header_item" style="margin-right: 2%">
+      <%= link_to "Add a New Link", new_link_path %>
+    </div>
+  </div>
+
+  <div class="content_div">
+    <div class="content">
+      <ul style="columns: <%= @category_columns_count %>">
+        <% @categories.each do |category| %>
+        <li>
+          <%= link_to "#{category.name}", category_path(category.id) %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

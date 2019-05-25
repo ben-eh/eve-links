@@ -13,3 +13,114 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background: url("https://live.staticflickr.com/5659/30706418230_d306f2f155_k.jpg") fixed no-repeat center center;
+  background-size: cover;
+  background-position: 0 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  /*background-color: grey;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.content_div {
+  text-align: center;
+  width: 100%;
+  margin-top: 2em;
+  color: white;
+}
+
+.content {
+  display: inline-block;
+  /*background-color: white;*/
+  /*opacity: 0.5;*/
+  width: 50%;
+  border-radius: 3px;
+  /*margin-top: 5%;*/
+  text-align: center;
+}
+
+.user_form {
+  text-align: left;
+  justify-content: space-between;
+}
+
+.content h2 {
+  color: white;
+  letter-spacing: 1px;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.content li {
+  font-size: 150%;
+  /*padding: 3% 0;*/
+  color: white;
+  margin-bottom: .5em;
+}
+
+.content a {
+  color: white;
+  /*background-color: black;*/
+}
+
+.header_item a {
+  text-decoration-line: none;
+  color: white;
+}
+
+.header_item a:hover {
+  text-decoration-line: underline;
+}
+
+.form {
+  color: white;
+}
+
+.trash-icon {
+  color: white;
+  height: 1em;
+  background-color: white;
+}
+
+.edit-icon {
+  color: white;
+  height: 1em;
+  background-color: white;
+}
+
+.content a {
+  text-decoration-line: none;
+}
+
+.content a:hover {
+  text-decoration-line: underline;
+}
+
+.links_form {
+  font-weight: bold;
+  font-size: 2em;
+}
