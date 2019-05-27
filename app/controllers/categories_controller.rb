@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :set_links_columns]
+  before_action :set_category, only: [:show, :edit, :update, :set_links_columns, :destroy]
   before_action :set_category_columns, only: [:index, :new]
   before_action :set_links_columns, only: [:show]
 
@@ -32,6 +32,11 @@ class CategoriesController < ApplicationController
   def update
     @category.update(category_params)
     redirect_to category_path
+  end
+
+  def destroy
+    @category.destroy
+    redirect_to root_path
   end
 
   private

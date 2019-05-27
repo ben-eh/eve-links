@@ -1,0 +1,9 @@
+add favourite race (maybe ship) for avatar figure
+add username (not used for login)
+make better navbar
+add delete/edit options and error messages
+try to add default import implementation
+
+navbar notes
+// don't load on homepage when not signed in (done automatically with devise)
+need my three options and an avatar/name which allows you to log out and potentially change some options (future)

@@ -17,6 +17,7 @@
         <% @categories.each do |category| %>
         <li>
           <%= link_to "#{category.name}", category_path(category.id) %>
+          <%= link_to "delete", category_path(category.id), method: :delete, data: { confirm: "Deleting a category will also delete all the links stored under it and this process is irreversible. Are you sure you want to continue?" } %>
         </li>
         <% end %>
       </ul>
