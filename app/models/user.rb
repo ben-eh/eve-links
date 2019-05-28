@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :categories, dependent: :destroy
-  has_many :links, through: :categories
+  has_many :links, through: :categories, dependent: :destroy
 end
