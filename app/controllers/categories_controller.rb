@@ -22,7 +22,7 @@ class CategoriesController < ApplicationController
   end
 
   def default_categories
-    category_names = ["Essential", "Travel", "PVE", "PvP", "Market, P.I. and Production", "General", "Exploration", "Wormholes", "TEST"]
+    category_names = ["Essential", "Travel", "PVE", "PvP", "Market, P.I. and Production", "General", "Exploration", "Wormholes"]
     category_names.each { |info| Category.create!(name: info, user_id: current_user.id) }
     redirect_to default_links_path
   end

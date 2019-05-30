@@ -3,10 +3,13 @@ entry that would pass that category_id with the other params to create new insta
 Would also want to have a button that says 'click here to add new category if your desired one is not available
 and that would link_to categories#new' -->
 
-<%= link_to image_tag("star.svg", width: 50), root_path %>
+<div class="container">
+  <div class="content_div">
+    <h2>Edit Entry</h2>
+    <div class="content">
+      <%= render 'form' %>
+    </div>
+  </div>
+</div>
 
-<h1>Add New Resource</h1>
-
-<%= render 'form' %>
-
-<p>Don't see the category you're looking for? Click <%= link_to "here", new_category_path %> to add it to the list </p>
+<p style="color: white; margin-top: 4em; margin-left: 1em">Click "Add a New Category" at the top right if you don't see the category you want/need for your link.</p>

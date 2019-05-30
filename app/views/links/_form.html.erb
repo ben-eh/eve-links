@@ -1,19 +1,21 @@
-<%= form_for @link do |x| %>
-  <div class="input_field">
-    <%= x.text_field :name, placeholder: "Name" %>
-  </div>
-  <br>
-  <div class="input_field">
-    <%= x.text_field :url, placeholder: "url" %>
-  </div>
-  <ul style="columns: <%= @category_columns_count %>">
-    <% @categories.each do |category| %>
-      <li>
-        <!-- radio_button(object_name, method, tag_value, options={}) -->
-        <%= x.radio_button :category_id, category.id %>
-        <%= x.label :category_id, "#{category.name}" %>
-      </li>
-    <% end %>
-  </ul>
-  <%= x.submit("Submit") %>
-<% end %>
+<div class="form">
+  <%= form_for @link do |x| %>
+    <div>
+      <%= x.text_field :name, placeholder: "Name" %>
+    </div>
+    <br>
+    <div>
+      <%= x.text_field :url, placeholder: "url" %>
+    </div>
+    <ul style="columns: <%= @category_columns_count %>">
+      <% @categories.each do |category| %>
+        <li>
+          <!-- radio_button(object_name, method, tag_value, options={}) -->
+          <%= x.radio_button :category_id, category.id %>
+          <%= x.label :category_id, "#{category.name}" %>
+        </li>
+      <% end %>
+    </ul>
+    <%= x.submit("Submit") %>
+  <% end %>
+</div>
