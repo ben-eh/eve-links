@@ -1,7 +1,8 @@
 <div class="form">
   <%= form_for @category do |x| %>
-    <%= x.text_field(:name) %>
-    <%= x.label(:name) %>
+    <%= x.text_field :name, placeholder: "Name" %>
+    <br>
+    <br>
     <%= x.submit("Submit") %>
   <% end  %>
 </div>

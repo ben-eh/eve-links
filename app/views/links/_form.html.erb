@@ -1,8 +1,11 @@
 <%= form_for @link do |x| %>
-  <%= x.label(:name) %>
-  <%= x.text_field(:name) %>
-  <%= x.label(:url) %>
-  <%= x.text_field(:url) %>
+  <div class="input_field">
+    <%= x.text_field :name, placeholder: "Name" %>
+  </div>
+  <br>
+  <div class="input_field">
+    <%= x.text_field :url, placeholder: "url" %>
+  </div>
   <ul style="columns: <%= @category_columns_count %>">
     <% @categories.each do |category| %>
       <li>

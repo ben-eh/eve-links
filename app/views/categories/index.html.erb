@@ -1,16 +1,4 @@
 <div class="container">
-  <div class="header">
-    <div class="header_item" style="margin-left: 2%">
-      <%= link_to "Add a Category", new_category_path %>
-    </div>
-    <div class="header_item">
-      <h1>Eve Resources Tool</h1>
-    </div>
-    <div class="header_item" style="margin-right: 2%">
-      <%= link_to "Add a New Link", new_link_path %>
-    </div>
-  </div>
-
   <div class="content_div">
     <% if @categories.count == 0 %>
       <div class="button">
