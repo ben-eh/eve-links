@@ -4,6 +4,7 @@ To Do
 -----
 - icons for edit/delete
 - set up error messages for devise and incomplete/unacceptable class params
+- set up proper 'forgot password' possibilities (not sure I can actually do this)
 
 Done
 -----
