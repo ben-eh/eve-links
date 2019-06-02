@@ -70,7 +70,7 @@ class CategoriesController < ApplicationController
   end
 
   def set_links_columns
-    @links = @category.links.all.where(:user => current_user)
+    @links = @category.links.all
     count = @links.count
     if count / 8 == 0
       @links_columns_count = 1
