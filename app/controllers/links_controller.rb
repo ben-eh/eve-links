@@ -11,6 +11,7 @@ class LinksController < ApplicationController
     @link = Link.new
     @categories = Category.all.where(:user => current_user)
     @categories = @categories.order(:name)
+    raise
   end
 
   def create
@@ -274,7 +275,7 @@ class LinksController < ApplicationController
   end
 
   def set_category_columns
-    @categories = Category.all
+    @categories = Category.all.where(:user => current_user)
     count = @categories.count
     if count / 8 == 0
       @category_columns_count = 1
