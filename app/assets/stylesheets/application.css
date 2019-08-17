@@ -202,10 +202,18 @@ ul {
   color: white;
   font-size: 2em;
   margin-left: .5em;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .notice {
   color: white;
   font-size: 2em;
-  margin-left: .5em;
+  /*margin-left: .5em;*/
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main-color {
+  color: white;
 }

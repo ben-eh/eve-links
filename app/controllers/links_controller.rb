@@ -11,7 +11,6 @@ class LinksController < ApplicationController
     @link = Link.new
     @categories = Category.all.where(:user => current_user)
     @categories = @categories.order(:name)
-    raise
   end
 
   def create
